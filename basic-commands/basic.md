@@ -59,3 +59,9 @@ $ git -h
 ```sh
 $ man git
 ```
+
+### List history of commands
+
+```sh
+$ history
+```

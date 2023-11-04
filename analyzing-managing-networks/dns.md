@@ -55,4 +55,4 @@ edit file `/etc/hosts`
 $ gedit /etc/hosts
 ```
 
-add new line: IP address`TAB`domain
+add new line: IP address `TAB` domain

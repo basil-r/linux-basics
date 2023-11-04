@@ -1,7 +1,8 @@
 ### Changing process priority
 
 **nice** _PARAMS_ _PROCESSNAME_  
-`-20 ... 0 ... +19` - increment value  
+`-20 ... 0 ... +19` - increment value
+
 for speed up
 
 ```sh

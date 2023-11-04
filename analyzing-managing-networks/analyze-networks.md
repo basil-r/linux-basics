@@ -31,3 +31,11 @@ $ nmap -sT 192.168.0.100
 ```sh
 $ nmap -sT 192.168.0.100 -p 1234
 ```
+
+### See what hops a packet might make between source and the destination
+
+**traceroute** _DESTINATION_IP_OR_DOMAIN_
+
+```sh
+$ traceroute google.com
+```
