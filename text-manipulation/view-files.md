@@ -86,3 +86,57 @@ $ less ~/somefile
 press `/search_keyword` and `ENTER`  
 press :`n` for next occurence  
 press `Q` - for quit
+
+### Sorting content (result)
+
+**sort** _FILENAME_
+
+```sh
+$ sort output.txt
+```
+
+```sh
+$ ls /bin /usr/bin | sort | less
+```
+
+### Deleting repeating strings
+
+**uniq** _SORTED_FILENAME_
+
+```sh
+$ uniq output.txt
+```
+
+```sh
+$ ls /bin /usr/bin | sort | uniq | less
+```
+
+### Getting repeating string
+
+**uniq** **-d** _FILENAME_
+
+```sh
+$ ls /bin /usr/bin | sort | uniq -d | less
+```
+
+### Word count `wc`
+
+**wc** [_OPTS_] _FILENAME_
+
+```sh
+$ wc output.txt
+```
+
+> 7 7 21 output.txt
+
+7 - string count  
+7 - word count  
+21 - bytes
+
+#### Lines count
+
+**wc** **-l** _FILENAME_
+
+```sh
+$ ls /bin /usr/bin | sort | uniq | wc -l
+```

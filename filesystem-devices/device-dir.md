@@ -34,3 +34,11 @@ $ ls -la /dev
 ```sh
 $ lsblk
 ```
+
+### Table of store devices and its mount points
+
+view file `/etc/fstab`
+
+```sh
+$ cat /etc/fstab
+```

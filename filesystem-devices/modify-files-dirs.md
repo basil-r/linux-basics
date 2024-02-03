@@ -43,12 +43,50 @@ Another Text
 $ mkdir newdir
 ```
 
+```sh
+$ mkdir newdir1 newdir2
+```
+
 ### Copying a file
 
-**cp** _SOURCEFILE_ _DISTPATH_
+**cp** _SOURCEFILE_ _DISTPATH[ES]_
 
 ```sh
 $ cp sourcefile ~/projects
+```
+
+#### Copying several files to a directory
+
+```sh
+$ cp onefile twofile ~/projects
+```
+
+#### Copying file with prompt before overwrite
+
+```sh
+$ cp -i onefile twofile
+```
+
+#### Copying all directory files to dist dir
+
+dist dir must exist
+
+```sh
+$ cp dir1/* dir2
+```
+
+#### Copying directory and its files to dist dir
+
+auto create the dir2 if not exists
+
+```sh
+$ cp -r dir1 dir2
+```
+
+#### Copying only source that not exist in dist directory
+
+```sh
+$ cp -u *.html distdir
 ```
 
 ### Renaming a file or a directory
@@ -57,6 +95,20 @@ $ cp sourcefile ~/projects
 
 ```sh
 $ mv oldfile newfile
+```
+
+#### Moving files to dist dir
+
+dist dir should exist
+
+```sh
+mv file1 file2 dir1
+```
+
+#### Moving dir and it files into dist dir
+
+```sh
+mv dir1 dir2
 ```
 
 ### Removing a file
@@ -81,4 +133,12 @@ $ rmdir somedir
 
 ```sh
 $ rm -r somedir
+```
+
+### Concatenating files
+
+**cat** _FILE_1_ \_FILE*2 ... > \_FILERESULT*
+
+```sh
+$ cat fileone filetwo > fileresult
 ```
