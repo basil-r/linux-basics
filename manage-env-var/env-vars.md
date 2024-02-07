@@ -8,13 +8,17 @@
 $ env
 ```
 
+```sh
+$ printenv
+```
+
 ### Vieving all environment variables
 
-```
+```sh
 $ set | more
 ```
 
-```
+```sh
 $ set | grep HISTSIZE
 ```
 

@@ -64,6 +64,18 @@ $ ls -lahS
 $ ls ~ /usr
 ```
 
+#### Show also content of directories
+
+```sh
+$ ls *
+```
+
+#### List hidden files
+
+```sh
+$ ls -d .[!.]?*
+```
+
 ### Getting help
 
 _COMMAND_ **--help** (or **-h**)

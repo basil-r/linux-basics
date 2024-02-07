@@ -91,3 +91,11 @@ at> somescript
 ```
 
 press `CTRL+D`
+
+### Sleeping
+
+**sleep** _SECONDS_
+
+```sh
+$ sleep 5
+```
